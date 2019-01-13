@@ -20,9 +20,9 @@ For training, please refer to `Training pipeline part 1` and `Training pipeline 
 
 - Change constants in `a00_common_functions.py`:
 
-⋅⋅⋅`TEST_IMAGES_PATH` - path to stage 2 test images
+  - `TEST_IMAGES_PATH` - path to stage 2 test images
 
-⋅⋅⋅`IS_TEST` = 1 - for inference
+  - `IS_TEST` = 1 - for inference
 
 - Run script: `python3 r40_final_inference_submit.py`
 
@@ -32,25 +32,25 @@ For training, please refer to `Training pipeline part 1` and `Training pipeline 
 
 - Change constants in `a00_common_functions.py`:
 
-⋅⋅⋅`DATASET_PATH` - path to OID images
+  - `DATASET_PATH` - path to OID images
 
-⋅⋅⋅`IS_TRAIN` - 1 - for training
+  - `IS_TRAIN` - 1 - for training
 
 - Run each script one by one:
 
-⋅⋅⋅`python3 a02_common_training_structures.py`
+  - `python3 a02_common_training_structures.py`
 
-⋅⋅⋅`python3 inception_resnet_v2/r40_inception_resnet_v2_training_model.py`
+  - `python3 inception_resnet_v2/r40_inception_resnet_v2_training_model.py`
 
-⋅⋅⋅`python3 inception_resnet_v2/r50_inception_resnet_v2_validation.py`
+  - `python3 inception_resnet_v2/r50_inception_resnet_v2_validation.py`
 
-⋅⋅⋅`python3 inception_resnet_v2/r52_validation_with_thr.py`
+  - `python3 inception_resnet_v2/r52_validation_with_thr.py`
 
-⋅⋅⋅`python3 resnet50_336/r40_resnet50_sh_336_training_model.py`
+  - `python3 resnet50_336/r40_resnet50_sh_336_training_model.py`
 
-⋅⋅⋅`python3 resnet50_336/r50_resnet50_sh_336_validation.py`
+  - `python3 resnet50_336/r50_resnet50_sh_336_validation.py`
 
-⋅⋅⋅python3 resnet50_336/r52_resnet50_validation_with_thr.py`
+  - python3 resnet50_336/r52_resnet50_validation_with_thr.py`
 
 
 ### Training pipeline part 2 (weimin's part):
@@ -59,9 +59,9 @@ Please note that all scripts related to weimin's model training are under direct
 
 1) Change constants in `a00_common_functions.py`: 
 
-⋅⋅⋅DATASET_PATH`: path to OID images - must be a directory that contains one and only one subdir (any name), that contains all training images
-⋅⋅⋅ROOT_PATH`: root directory that has the input folder where all competition data csv files stay
-⋅⋅⋅TUNING_IMAGE_PATH`: absolute path pattern that finds all 1000 tuning label images 
+  - DATASET_PATH`: path to OID images - must be a directory that contains one and only one subdir (any name), that contains all training images
+  - ROOT_PATH`: root directory that has the input folder where all competition data csv files stay
+  - TUNING_IMAGE_PATH`: absolute path pattern that finds all 1000 tuning label images 
 
 2) Run each script one by one:
 
@@ -92,24 +92,24 @@ Please note that all scripts related to weimin's model training are under direct
 
 - weimin's models and threshold paths are stored below: 
 
-⋅⋅⋅ROOT_PATH + 'model_0/inception_resnet_v2_latest.h5'`
+  - ROOT_PATH + 'model_0/inception_resnet_v2_latest.h5'`
 
-⋅⋅⋅ROOT_PATH + 'model_1/inception_resnet_v2_latest.h5'`
+  - ROOT_PATH + 'model_1/inception_resnet_v2_latest.h5'`
 
-⋅⋅⋅ROOT_PATH + 'model_2/inception_resnet_v2_latest.h5'`
+  - ROOT_PATH + 'model_2/inception_resnet_v2_latest.h5'`
 
-⋅⋅⋅ROOT_PATH + 'model_3/inception_resnet_v2_latest.h5'`
+  - ROOT_PATH + 'model_3/inception_resnet_v2_latest.h5'`
 
-⋅⋅⋅ROOT_PATH + 'model_4/new_xception_latest.h5'`
+  - ROOT_PATH + 'model_4/new_xception_latest.h5'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_inception_resnet_version_1_sp_0.1_ep_0.9_min_1_def_0.9.pklz'`
+  - ROOT_PATH + 'modified_data/thr_arr_inception_resnet_version_1_sp_0.1_ep_0.9_min_1_def_0.9.pklz'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_inception_resnet_version_2_sp_0.1_ep_0.9_min_3_def_0.9.pklz'`
+  - ROOT_PATH + 'modified_data/thr_arr_inception_resnet_version_2_sp_0.1_ep_0.9_min_3_def_0.9.pklz'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_inception_resnet_weimin_version_3_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
+  - ROOT_PATH + 'modified_data/thr_arr_inception_resnet_weimin_version_3_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_inception_resnet_weimin_version_4_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
+  - ROOT_PATH + 'modified_data/thr_arr_inception_resnet_weimin_version_4_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_xception_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
+  - ROOT_PATH + 'modified_data/thr_arr_xception_sp_0.01_ep_0.99_min_1_def_0.99.pklz'`
 
-⋅⋅⋅ROOT_PATH + 'modified_data/thr_arr_xception_sp_0.01_ep_0.99_min_1_def_0.9999.pklz' # used for indexing only`
+  - ROOT_PATH + 'modified_data/thr_arr_xception_sp_0.01_ep_0.99_min_1_def_0.9999.pklz' # used for indexing only`
