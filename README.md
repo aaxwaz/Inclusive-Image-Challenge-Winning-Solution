@@ -1,6 +1,6 @@
 3rd place winning solution for [Inclusive Images Challenge (NIPS Competition track 2018)](https://www.kaggle.com/c/inclusive-images-challenge)
 ================================
-This repo documents the code to reproduce team `WorldWideIncludive` winning model. 
+This repo documents the code to reproduce team `WorldWideIncludive` winning model. The model scored `0.37102` (3rd place) on final stage 2 Leader Board. 
 
 For inference, please refer to `Stage 2 Inference Pipeline` 
 
