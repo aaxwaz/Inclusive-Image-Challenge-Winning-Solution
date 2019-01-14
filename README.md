@@ -6,6 +6,8 @@ For inference, please refer to `Stage 2 Inference Pipeline`
 
 For training, please refer to `Training pipeline part 1` and `Training pipeline part 2`
 
+For NIPS presentation, please refer to `Inclusive Image Challenge NIPS.pdf`
+
 ### dependencies: 
 - python 3.6
 - tf: 1.8.0
