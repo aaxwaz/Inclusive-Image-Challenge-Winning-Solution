@@ -2,11 +2,11 @@
 ================================
 This repo documents the code to reproduce team `WorldWideIncludive` winning model. The model scored `0.37102` (3rd place) on final stage 2 Leader Board. 
 
-For inference, please refer to `Stage 2 Inference Pipeline` 
+For inference, please refer to [`Stage 2 Inference Pipeline`](https://github.com/aaxwaz/Inclusive-Image-Challenge-Winning-Solution#stage-2-inference-pipeline---for-generating-final-submission) below. 
 
-For training, please refer to `Training pipeline part 1` and `Training pipeline part 2`
+For training, please refer to [`Training pipeline part 1`](https://github.com/aaxwaz/Inclusive-Image-Challenge-Winning-Solution#training-pipeline-part-1-zfturbos-part) and [`Training pipeline part 2`](https://github.com/aaxwaz/Inclusive-Image-Challenge-Winning-Solution#training-pipeline-part-2-weimins-part) below. 
 
-For NIPS presentation, please refer to `Inclusive Image Challenge NIPS.pdf`
+For NIPS presentation, please refer to [`Inclusive Image Challenge NIPS.pdf`](https://github.com/aaxwaz/Inclusive-Image-Challenge-Winning-Solution/blob/master/Inclusive%20Image%20Challenge%20NIPS.pdf) in this repo. 
 
 ### dependencies: 
 - python 3.6
